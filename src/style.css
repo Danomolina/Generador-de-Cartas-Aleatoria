@@ -1,25 +1,30 @@
 body {
   background: #0e7e12;
-
+  box-sizing: border-box;
 }
 
 .card {
-  display: inline-block;
+  text-align: center;
   background: white;
   margin: auto;
-  height: 400px;
-  width: 200px;
+  height: 350px;
+  font-size: 80px;
+  width: 250px;
   padding: 20px;
   border: 1px solid black;
-  border-radius: 20px;
-  .top-suit{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .botton-suit{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top-suit {
+  width: 100%;
+  text-align: left;
+}
+
+.botton-suit {
+  width: 100%;
+  text-align: right;
 }
